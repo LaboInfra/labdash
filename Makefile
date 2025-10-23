@@ -3,3 +3,6 @@ broker:
 
 web:
 	uv run python3 manage.py runserver
+
+css:
+	tailwindcss -i static/css/input.css -o static/css/output.css --watch

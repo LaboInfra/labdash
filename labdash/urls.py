@@ -19,8 +19,10 @@ from django.urls import path
 
 # TODO add env flag to disable in prod
 from debug_toolbar.toolbar import debug_toolbar_urls
-
+from dashboard import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home, name='home'),
+
 ] + debug_toolbar_urls() # TODO add env flag to disable in prod
