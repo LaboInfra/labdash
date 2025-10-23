@@ -1,0 +1,6 @@
+services:
+  # Redis service required for Celery
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
